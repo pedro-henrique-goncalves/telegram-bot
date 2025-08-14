@@ -113,14 +113,14 @@ TELEGRAM_API_URL=https://api.telegram.org/bot
 * **Via cURL:**
 
 ```bash
-curl -F "url=<SEU_WEBHOOK_URL>" https://api.telegram.org/bot<SEU_TOKEN>/setWebhook
+curl -F "url=<SEU_WEBHOOK_URL>/api/telegram/webhook" https://api.telegram.org/bot<SEU_TOKEN>/setWebhook
 ```
 
 * **Via navegador:**
   Abra a URL:
 
 ```
-https://api.telegram.org/bot<SEU_TOKEN>/setWebhook?url=<SEU_WEBHOOK_URL>
+https://api.telegram.org/bot<SEU_TOKEN>/setWebhook?url=<SEU_WEBHOOK_URL>/api/telegram/webhook
 ```
 
 > Certifique-se que o webhook é público (ngrok ou domínio válido).
