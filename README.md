@@ -152,15 +152,7 @@ QUEUE_CONNECTION=sync
 
 ## Debug com Telescope
 
-1. Instalar Telescope (se ainda não estiver instalado):
-
-```bash
-docker exec -it telegram-bot-php-fpm php artisan telescope:install
-
-docker exec -it telegram-bot-php-fpm php artisan migrate
-```
-
-2. Acessar Telescope:
+1. Acessar Telescope:
 
 ```
 http://localhost/telescope
