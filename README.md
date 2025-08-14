@@ -134,6 +134,16 @@ https://api.telegram.org/bot<SEU_TOKEN>/setWebhook?url=<SEU_WEBHOOK_URL>/api/tel
 
 ---
 
+## Permissões
+
+Se ocorrerem erros relacionados a permissão nas pastas `storage` ou `bootstrap/cache`, o Laravel pode não conseguir gravar arquivos necessários para logs, cache ou sessões.
+
+1. Para resolver esses erros basta rodar o comando abaixo
+
+```bash
+chown -R www-data:www-data storage bootstrap/cache
+```
+
 ## Filas e Jobs
 
 1. Iniciar worker da fila (dentro do container PHP-FPM):
